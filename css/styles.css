@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Crimson Text', serif;
-    line-height: 1.6;
+    line-height: 1.5;
     background: #F5F2E7;
     color: #333;
 }
@@ -14,7 +14,7 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Unica One', sans-serif;
   color: #4A6741;
-  margin-top: 0.5em;
+  font-weight: lighter;
 }
 
 header {
@@ -28,25 +28,27 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0 1.5em 0 0;
+    padding: 0 2em 0 0;
 }
 
 .logo {
     max-width: 246px;
     max-height: 135px;
+    margin-left: 0.5em;
+
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2.1em;
+    gap: 3em;
 }
 
 a {
     color: #F5F2E7;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.65em;
 }
 
 a:hover {
@@ -57,16 +59,100 @@ a.active {
     color: #4A6741;
 }
 
+.heroImage1 {
+    position: relative;
+    width: 100%;
+    height: 260px;    
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 0;
+}
+
 .heroImage1 img {
     width: 100%;
-    height: auto;
-    max-height: 260px;
+    height: 100%;
     object-fit: cover;
+    object-position: 20% 48%;
+    display: block;
 }
 
 .heroImage1 .hero-text {
-    font-size: 2rem;
+    margin: 0;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 3.4em;
+    line-height: 1;
     color: #F5F2E7;
-    display: inline-block;
-    border-radius: 10px;
+    font-weight: normal;
+}
+
+section {
+    margin: 1.3em auto;
+}
+
+.intro, .featured, .cta {
+    padding: 0 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-bottom: 0.9em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.grid { 
+    display: flex;
+    gap: 9.43em;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+
+article {
+    width: 385px;
+    height: 160px;
+    text-align: left;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0.3em;
+    display: block;
+    border-radius: 6px;
+}
+
+.featured article:first-of-type img {
+    object-position: 20% 85%;
+}
+
+.featured article:nth-of-type(2) img {
+    object-position: 20% 8%;
+}
+
+.featured article:last-of-type img {
+    object-position: 50% 70%;
+}
+
+.cta {
+    margin-top: 10.5em;
+}
+
+footer {
+    background-color: #4A6741;
+    color: #F5F2E7;
+    text-align: center;
+    padding: 2em;
 }
