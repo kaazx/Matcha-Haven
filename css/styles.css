@@ -96,6 +96,7 @@ section {
 
 h1 {
     font-size: 1.6em;
+    grid-column: span 2;
 }
 
 h3 {
@@ -151,16 +152,22 @@ article img {
 }
 
 main {
+    width: 93%;
     margin: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 0.5em 2.5em;
 }
 
-section ul, section ol {
+main section {
+    margin-left: 0;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+main section ul, main section ol {
     padding-left: 50px;
     font-size: 1.3em;
-    line-height: 1.8;
 }
 
 footer {
