@@ -62,10 +62,9 @@ a.active {
 .heroImage1 {
     position: relative;
     width: 100%;
-    height: 260px;    
+    height: 270px;    
     overflow: hidden;
     margin: 0 auto;
-    line-height: 0;
 }
 
 .heroImage1 img {
@@ -168,6 +167,70 @@ main section {
 main section ul, main section ol {
     padding-left: 50px;
     font-size: 1.3em;
+}
+
+.heroImage2 {
+    width: 100%;
+    height: 240px;    
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.heroImage2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 65%;
+    display: block;
+}
+
+.wellness-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 388px;
+    grid-column: span 2;
+}
+
+.table {
+    margin-top: 20px;
+    grid-column: span 2;
+}
+
+table {
+    width: 80%;
+    margin: 4px auto auto 160px;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #4A6741;
+}
+
+th, td {
+    border: 3px solid #F5F2E7;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+    background-color: #7BB661;
+}
+
+blockquote {
+    width: 46%;
+    margin: 20px auto;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.83em;
+    line-height: 1.5;
+    background-color: #F5F2E7;
+    padding: 10px;
+    border: 1px solid #4A6741;
+    border-left: 9px solid #4A6741;
+    border-radius: 8px;
 }
 
 footer {
