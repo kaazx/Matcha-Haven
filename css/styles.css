@@ -113,7 +113,7 @@ p {
 
 .grid { 
     display: flex;
-    gap: 9.43em;
+    gap: 8.3em;
     justify-content: left;
     flex-wrap: wrap;
     margin-top: 0.5em;
@@ -147,26 +147,24 @@ article img {
 }
 
 .cta {
-    margin-top: 10.5em;
+    margin-top: 11.5em;
 }
 
 main {
-    width: 93%;
     margin: 2em;
+}
+
+.matcha101-columns {
+    width: 93%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5em 2.5em;
 }
 
-main section {
+section {
     margin-left: 0;
     margin-bottom: 0;
     line-height: 1.8;
-}
-
-main section ul, main section ol {
-    padding-left: 50px;
-    font-size: 1.3em;
 }
 
 .heroImage2 {
@@ -184,10 +182,15 @@ main section ul, main section ol {
     display: block;
 }
 
+section ul, section ol {
+    padding-left: 50px;
+    font-size: 1.3em;
+}
+
 .wellness-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 388px;
+    gap: 360px;
     grid-column: span 2;
 }
 
@@ -232,6 +235,32 @@ blockquote {
     padding: 10px;
     border: 1px solid #4A6741;
     border-left: 9px solid #4A6741;
+    border-radius: 8px;
+}
+
+.recipes-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 11.5em;
+    align-items: start;
+}
+
+.recipes-columns section {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.recipes-columns section p, .recipes-columns section ul, .recipes-columns section ol {
+    margin-left: 1.7em;
+}
+
+iframe {
+    display: block;
+    width: 275;
+    height: 480;
+    margin: 0.5em auto auto 2em;
+    border: 3px solid #4A6741;
     border-radius: 8px;
 }
 
