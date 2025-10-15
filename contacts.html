@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matcha Haven — Contacts</title>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Unica+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -32,33 +33,45 @@
         <h1>CONTACT US</h1>
 
         <div class="contacts-columns">
-            <p>If you’d like to share your matcha story, recipe, or just have questions, fill out the form below.</p>
+            <section class="contact-form">
+                <p>If you’d like to share your matcha story, recipe, or just have questions, fill out the form below.</p>
 
-            <form class="contact-form">
-                <fieldset>
-                    <legend>Send a Message</legend>
+                <form>
+                    <fieldset>
+                        <legend>Send a Message</legend>
 
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name">
+                        <div class="formGroup">
+                            <div class="formRow">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" placeholder=" Enter your name">
+                            </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your account@gmail.com">
+                            <div class="formRow">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder=" Enter your account@gmail.com">
+                            </div>
+                        </div>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Share your story"></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder=" Share your story"></textarea>
 
-                    <div class="buttons">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                    </div>
-                </fieldset>
-            </form>
+                        <div class="buttons">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
 
-            <section class="contact-right">
-                <h3>Socials</h3>
-                <p>📘 Reach me on <a href="#">Facebook</a></p>
-                <p>💼 Reach me on <a href="#">LinkedIn</a></p>
+            <section class="socials">
+                <h3>socials</h3>
+                <p><i class="fab fa-facebook-f"></i> Reach me on <a href="https://www.facebook.com/kirstenkeithleenanne.zapanta" target="_blank">Facebook</a></p>
+                <p><i class="fab fa-linkedin"></i> Reach me on <a href="https://www.linkedin.com/in/kirsten-keithleen-anne-zapanta-049071325/" target="_blank">LinkedIn</a></p>
             </section>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; Copyright 2025. All rights reserved. Created by Kirsten Zapanta.</p>
+  </footer>
 </body>

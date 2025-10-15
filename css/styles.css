@@ -35,7 +35,6 @@ header {
     max-width: 246px;
     max-height: 135px;
     margin-left: 0.5em;
-
 }
 
 nav ul {
@@ -243,7 +242,6 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 11.5em;
-    align-items: start;
 }
 
 .recipes-columns section {
@@ -262,6 +260,109 @@ iframe {
     margin: 0.5em auto auto 2em;
     border: 3px solid #4A6741;
     border-radius: 8px;
+}
+
+.contacts-columns {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2em;
+}
+
+.contact-form {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+form {
+    margin-top: 1em;
+}
+
+.formGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.contact-form fieldset {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0.5em 2em 0.5em 2em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form legend {
+    font-size: 1.3em;
+    padding: 0 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 96%;
+    height: 50px;
+    background-color: #7BB661;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+    color: #F5F2E7;
+    font-size: 1em;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #F5F2E7;
+    opacity: 90%;
+    font-size: 1em;
+    font-family: 'Crimson Text', serif;
+}
+
+.contact-form textarea {
+    height: 125px;
+    width: 40%;
+}
+
+.buttons {
+    margin-top: 4px;
+}
+
+button {
+    width: 75px;
+    background-color: #4A6741;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 1em;
+    font-family: 'Crimson Text', serif;
+}
+
+.socials {
+    margin-left: 2.5em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.socials a {
+    font-size: 1em;
+    text-decoration: underline;
+    color: #333;
+}
+
+.socials a:hover {
+    color: #4A6741;
+}
+
+.fa-facebook-f, .fa-linkedin {
+    color: #4A6741;
+    margin-left: 0.7em;
 }
 
 footer {
