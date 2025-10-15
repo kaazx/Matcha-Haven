@@ -192,7 +192,7 @@ main section ul, main section ol {
 }
 
 .table {
-    margin-top: 20px;
+    margin-top: 10px;
     grid-column: span 2;
 }
 
@@ -209,19 +209,21 @@ th, td {
     border: 3px solid #F5F2E7;
     padding: 10px;
     text-align: center;
+    width: 180px;
 }
 
 th {
     font-size: 1.2em;
+    background-color: #4A6741;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #7BB661;
 }
 
 blockquote {
     width: 46%;
-    margin: 20px auto;
+    margin: 1em auto;
     font-style: italic;
     font-weight: 700;
     font-size: 0.83em;
