@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0 2em 0 0;
+    margin-right: 2em;
 }
 
 .logo {
@@ -58,7 +58,7 @@ a.active {
     color: #4A6741;
 }
 
-.heroImage1 {
+.heroImage1, .heroImage2 {
     position: relative;
     width: 100%;
     height: 270px;    
@@ -66,7 +66,11 @@ a.active {
     margin: 0 auto;
 }
 
-.heroImage1 img {
+.heroImage2 {
+    height: 240px;
+}
+
+.heroImage1 img, .heroImage2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,22 +78,28 @@ a.active {
     display: block;
 }
 
+.heroImage2 img {
+    object-position: 20% 65%;
+}
+
 .heroImage1 .hero-text {
-    margin: 0;
     padding-top: 0;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
     font-size: 3.4em;
     line-height: 1;
     color: #F5F2E7;
-    font-weight: normal;
+}
+
+main {
+    margin: 2em;
 }
 
 section {
-    margin: 1.3em 2em;
+    margin-top: 1.2em;
+    line-height: 1.8;
 }
 
 h1 {
@@ -103,7 +113,6 @@ h3 {
 
 h4 {
     font-size: 1.1em;
-    margin-bottom: 0.9em;
 }
 
 p {
@@ -121,7 +130,6 @@ p {
 article {
     width: 385px;
     height: 160px;
-    text-align: left;
 }
 
 article img {
@@ -146,39 +154,16 @@ article img {
 }
 
 .cta {
-    margin-top: 11.5em;
+    margin-top: 10.5em;
 }
 
-main {
-    margin: 2em;
+.matcha101-columns, .wellness-columns, .recipes-columns, .contacts-columns, .formGroup {
+    display: grid;
 }
 
 .matcha101-columns {
-    width: 93%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.5em 2.5em;
-}
-
-section {
-    margin-left: 0;
-    margin-bottom: 0;
-    line-height: 1.8;
-}
-
-.heroImage2 {
-    width: 100%;
-    height: 240px;    
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.heroImage2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 20% 65%;
-    display: block;
+    gap: 0 9em;
 }
 
 section ul, section ol {
@@ -187,10 +172,8 @@ section ul, section ol {
 }
 
 .wellness-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 360px;
-    grid-column: span 2;
+    grid-template-columns: 1.14fr 1fr;
+    gap: 0 22em;
 }
 
 .table {
@@ -200,16 +183,17 @@ section ul, section ol {
 
 table {
     width: 80%;
-    margin: 4px auto auto 160px;
+    margin: auto auto 15px 160px;
     border-collapse: collapse;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 600;
     background-color: #4A6741;
 }
 
 th, td {
     border: 3px solid #F5F2E7;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     width: 180px;
 }
@@ -225,12 +209,10 @@ tr:nth-child(odd) {
 
 blockquote {
     width: 46%;
-    margin: 1em auto;
+    margin: auto;
     font-style: italic;
     font-weight: 700;
     font-size: 0.83em;
-    line-height: 1.5;
-    background-color: #F5F2E7;
     padding: 10px;
     border: 1px solid #4A6741;
     border-left: 9px solid #4A6741;
@@ -238,13 +220,11 @@ blockquote {
 }
 
 .recipes-columns {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: 0 11.5em;
 }
 
-.recipes-columns section {
+.recipes-columns section, .socials {
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -254,24 +234,21 @@ blockquote {
 }
 
 iframe {
-    display: block;
-    width: 275;
-    height: 480;
-    margin: 0.5em auto auto 2em;
+    width: 510px;
+    height: 300px;
+    margin: 0.5em auto auto 3.9em;
     border: 3px solid #4A6741;
     border-radius: 8px;
 }
 
 .contacts-columns {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 2em;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3em;
 }
 
 .contact-form {
     margin-top: 0;
     margin-bottom: 0.5em;
-    width: 100%;
 }
 
 form {
@@ -279,7 +256,6 @@ form {
 }
 
 .formGroup {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
@@ -287,7 +263,7 @@ form {
 .contact-form fieldset {
     border: 1px solid #333;
     border-radius: 8px;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.5em 2em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -310,26 +286,22 @@ form {
     border: 1px solid #333;
     border-radius: 5px;
     padding: 8px;
-    margin-top: 5px;
-    color: #F5F2E7;
     font-size: 1em;
+    font-family: 'Crimson Text', serif;
+    margin-top: 5px;
+    
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #F5F2E7;
     opacity: 90%;
-    font-size: 1em;
     font-family: 'Crimson Text', serif;
 }
 
 .contact-form textarea {
     height: 125px;
     width: 40%;
-}
-
-.buttons {
-    margin-top: 4px;
 }
 
 button {
@@ -339,21 +311,16 @@ button {
     border: none;
     padding: 10px 14px;
     border-radius: 20px;
-    margin-right: 8px;
     font-size: 1em;
+    margin-right: 8px;
     font-family: 'Crimson Text', serif;
-}
-
-.socials {
-    margin-left: 2.5em;
-    margin-top: 0;
-    padding-top: 0;
 }
 
 .socials a {
     font-size: 1em;
     text-decoration: underline;
     color: #333;
+    font-weight: normal;
 }
 
 .socials a:hover {
@@ -370,4 +337,16 @@ footer {
     color: #F5F2E7;
     text-align: center;
     padding: 2em;
+}
+
+/* Media Queries */
+/* Tablet Viewport */
+@media (max-width: 768px) {
+    .matcha101-columns, .wellness-columns, .recipes-columns, .contacts-columns, .formGroup {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form textarea {
+        width: 100%;
+    }
 }
