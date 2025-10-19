@@ -32,8 +32,8 @@ header {
 }
 
 .logo {
-    max-width: 246px;
-    max-height: 135px;
+    width: 200px;
+    height: 135px;
     margin-left: 0.5em;
 }
 
@@ -343,74 +343,65 @@ footer {
 /* Tablet Viewport */
 @media (max-width: 835px) {
 header {
-    height: 185px;
-}
+    height: 185px;}
+
+.logo {
+    width: 240px;
+    height: 160px;}
 
 .navbar {
     flex-direction: column;
-    margin: auto;
-}
+    margin: 0;}
 
 nav ul {
-    gap: 2em;
-    margin: 0 auto 2.5em auto;
-}
+    gap: 2.5em;
+    margin-top: -53px;}
 
 a {
-    font-size: 1.6em;
-}
+    font-size: 1.6em;}
 
 .heroImage1 {
-    height: 158px;    
-}
+    height: 158px;}
 
 .heroImage1 .hero-text {
-    font-size: 2.1em;
-}
+    font-size: 2.1em;}
 
 main {
-    margin: 1.8em;
-}
+    margin: 1.8em;}
 
 section {
-    margin-top: 1em;
-    line-height: 1.6;
-}
+    margin: 0 auto 0.8em auto;
+    line-height: 1.4;}
 
 h1 {
-    font-size: 1.4em;
-    grid-column: span 2;
-}
+    font-size: 1.4em;}
 
 h3 {
-    font-size: 1.2em;
-}
+    font-size: 1.25;}
 
 h4 {
-    font-size: 0.9em;
-}
+    font-size: 1em;}
 
 p {
-    font-size: 1.1em;
-}
+    font-size: 1.12em;}
 
 .grid {
     gap: 3em;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 
 article {
     width: 310px;
-    height: 141px;
-}
+    height: 141px;}
 
-article img {
-    height: 100%;
-}
+article:first-of-type {
+    margin-bottom: 5.5em;}
+
+article h4 {
+    margin-bottom: 0.7em;}
 
 .cta {
-    margin-top: 8em;
-}
+    margin-top: 7.7em;}
+
 
 .matcha101-columns {
     grid-template-columns: 1fr;
