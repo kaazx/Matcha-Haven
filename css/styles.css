@@ -200,6 +200,7 @@ th, td {
 
 th {
     font-size: 1.2em;
+    padding: 10px;
     background-color: #4A6741;
 }
 
@@ -208,11 +209,11 @@ tr:nth-child(odd) {
 }
 
 blockquote {
-    width: 46%;
+    width: 740px;
     margin: auto;
     font-style: italic;
     font-weight: 700;
-    font-size: 0.83em;
+    font-size: 0.95em;
     padding: 10px;
     border: 1px solid #4A6741;
     border-left: 9px solid #4A6741;
@@ -378,7 +379,7 @@ h1 {
     margin-bottom: 1.3em;}
 
 h3 {
-    font-size: 1.25;}
+    font-size: 1.2;}
 
 h4 {
     font-size: 1em;}
@@ -404,23 +405,31 @@ article h4 {
     margin-top: 7.7em;}
 
 section {
-    margin-top: -10px;
-}
+    margin-top: -10px;}
 
 .matcha101-columns {
     grid-template-columns: 1fr;
-    gap: 2em;
-}
+    gap: 2em;}
 
 section ul, section ol {
     padding-left: 40px;
-    font-size: 1.12em;
-}
+    font-size: 1.12em;}
 
 .wellness-columns, .recipes-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+    gap: 1em;}
+
+table {
+    width: 95%;
+    margin: 0.7em auto 1.6em auto;
+    font-size: 1.1em;}
+
+th {
+    font-size: 1.1em;}
+
+blockquote {
+    width: 590px;}
 
 iframe {
     width: 100%;
@@ -430,14 +439,10 @@ iframe {
 
 .contacts-columns {
     grid-template-columns: 1fr;
-    gap: 2em;
+    gap: 0;
 }
 
 .contact-form textarea {
     width: 100%;
-}
-
-blockquote {
-    width: 80%;
 }
 }
