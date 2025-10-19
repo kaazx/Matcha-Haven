@@ -369,12 +369,13 @@ a {
 main {
     margin: 1.8em;}
 
-section {
+.intro, .featured {
     margin: 0 auto 0.8em auto;
     line-height: 1.4;}
 
 h1 {
-    font-size: 1.4em;}
+    font-size: 1.4em;
+    margin-bottom: 1.3em;}
 
 h3 {
     font-size: 1.25;}
@@ -402,10 +403,23 @@ article h4 {
 .cta {
     margin-top: 7.7em;}
 
+section {
+    margin-top: -10px;
+}
 
 .matcha101-columns {
     grid-template-columns: 1fr;
     gap: 2em;
+}
+
+section ul, section ol {
+    padding-left: 40px;
+    font-size: 1.12em;
+}
+
+.wellness-columns, .recipes-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 iframe {
