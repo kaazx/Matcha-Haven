@@ -15,3 +15,19 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     overlay.classList.remove("active");
     document.body.classList.remove("no-scroll");
 }));
+
+//Array JS code
+const matchaFinds = ["Matcha Latte", "Matcha Salt", "Matcha Face Mask"];
+console.log("Available Matcha Recipes & DIY:", matchaFinds.join(", "))
+
+//Loop JS code
+for (let i = 0; i < matchaFinds.length; i++) {
+  console.log("Item " + (i + 1) + ": " + matchaFinds[i]);
+}
+
+//Condition JS code
+const userFave = "Matcha Latte";
+if (matchaFinds.includes(userFave)) {
+  console.log(`You chose ${userFave} — excellent choice!`);} 
+else {
+  console.log("That type isn't on our list.");}
