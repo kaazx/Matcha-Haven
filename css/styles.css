@@ -645,3 +645,48 @@ footer {
     font-size: 0.7em;
     padding: 1em;}
 }
+
+@media print {
+    * {
+        color: #000;
+        background-color: transparent;
+        box-shadow: none;}
+
+    body, main, section, article, blockquote {
+        background-color: #fff;
+        color: #000;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer, nav, .hamburger, .overlay {display: none;}
+
+    table, th, td {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+
+    input, textarea, button {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+        box-shadow: none;
+    }
+
+    a, a:visited {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    h1 {font-size: 1.8em;}
+    h2 {font-size: 1.6em;}
+    h3 {font-size: 1.4em;}
+    p, li, label, input, textarea {font-size: 1.2em;}
+    section ul, section ol {font-size: 0.9em !important;}
+
+    h1, h2, h3, h4, p, table, blockquote {page-break-inside: avoid;}
+}
