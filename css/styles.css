@@ -323,6 +323,11 @@ footer {
     text-align: center;
     padding: 2em;}
 
+footer .fa-facebook-f, footer .fa-linkedin {
+    color: #F5F2E7;
+    text-align: center;
+    margin-left: 0.3em;}
+
 /* Media Queries */
 /* Tablet Viewport */
 @media (min-width: 481px) and (max-width: 900px) {
