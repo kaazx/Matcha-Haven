@@ -17,7 +17,8 @@ h1, h2, h3, h4 {
 header {
     background: #7BB661;
     width: 100%;
-    height: 135px;}
+    height: 135px;
+    margin-bottom: -10px;}
 
 .overlay {
     position: fixed;
@@ -84,7 +85,7 @@ a.active {color: #4A6741;}
     width: 100%;
     height: 270px;    
     overflow: hidden;
-    margin: 0 auto;}
+    margin: 0 auto -10px auto;}
 
 .heroImage2 {height: 240px;}
 
@@ -93,9 +94,12 @@ a.active {color: #4A6741;}
     height: 100%;
     object-fit: cover;
     object-position: 20% 48%;
-    display: block;}
+    display: block;
+    opacity: 85%;}
 
-.heroImage2 img {object-position: 20% 65%;}
+.heroImage2 img {
+    object-position: 20% 65%;
+    opacity: 100%;}
 
 .heroImage1 .hero-text {
     padding-top: 0;
@@ -114,10 +118,10 @@ section {
     line-height: 1.8;}
 
 h1 {
-    font-size: 1.6em;
+    font-size: 2.5em;
     grid-column: span 2;}
 
-h3 {font-size: 1.4em;}
+h3 {font-size: 1.5em;}
 
 h4 {font-size: 1.1em;}
 
@@ -148,6 +152,12 @@ article img {
 
 .featured article:last-of-type img {object-position: 50% 70%;}
 
+article a {
+    text-decoration: none;
+    color: #4A6741;}
+
+article a:hover {text-decoration: underline;}
+
 .cta {margin-top: 10.5em;}
 
 .matcha101-columns, .wellness-columns, .recipes-columns, .contacts-columns, .formGroup {
@@ -169,11 +179,12 @@ section ul, section ol {
 
 .table {
     margin-top: 10px;
-    grid-column: span 2;}
+    grid-column: span 2;
+    text-align: center;}
 
 table {
     width: 80%;
-    margin: auto auto 15px 160px;
+    margin: 10px auto 15px 160px;
     border-collapse: collapse;
     color: #fff;
     font-size: 1.3em;
@@ -208,9 +219,8 @@ blockquote {
     grid-template-columns: 1.1fr 1fr;
     gap: 0 11.5em;}
 
-.recipes-columns section, .socials {
-    margin-bottom: 0;
-    margin-top: 0;}
+.recipes-columns section:first-of-type, .recipes-columns section:nth-of-type(2) {
+    margin-bottom: -20px;}
 
 .recipes-columns section p, .recipes-columns section ul, .recipes-columns section ol {
     margin-left: 1.7em;}
@@ -284,6 +294,10 @@ button {
     margin-right: 8px;
     font-family: 'Crimson Text', serif;}
 
+.socials {
+    margin-top: 0;
+    margin-bottom: 0;}
+
 .socials a {
     font-size: 1em;
     text-decoration: underline;
@@ -338,10 +352,10 @@ footer {
         line-height: 1.4;}
 
     h1 {
-        font-size: 1.4em;
-        margin-bottom: 1.3em;}
+        font-size: 1.9em;
+        margin-bottom: 1em;}
 
-    h3 {font-size: 1.2;}
+    h3 {font-size: 1.4em;}
 
     h4 {font-size: 1em;}
 
@@ -374,6 +388,8 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;}
+    
+    .table {margin-top: 18px;}
 
     table {
         width: 95%;
@@ -417,7 +433,9 @@ footer {
 /* Mobile Viewport */
 @media (max-width: 480px) {
     body.no-scroll {overflow: hidden;}
-    header {height: 90px;}
+    header {
+        height: 90px;
+        margin-bottom: -5px;}
 
     .overlay.active {
         opacity: 1;
@@ -481,12 +499,17 @@ footer {
     
     .nav-icon {visibility: visible;}
 
-    .heroImage1 {height: 90px;}
+    .heroImage1 {
+        height: 90px;
+        margin-bottom: -5px;}
+        
     .heroImage1 img {object-position: 20% 43%;}
 
     .heroImage1 .hero-text {font-size: 1.2em;}
 
-    .heroImage2 {height: 73px;}
+    .heroImage2 {
+        height: 73px;
+        margin-bottom: -5px;}
 
     main {margin: 1em;}
 
@@ -495,14 +518,14 @@ footer {
         line-height: 1.5;}
 
     h1 {
-        font-size: 1em;
-        margin-bottom: 1.5em;}
+        font-size: 1.5em;
+        margin-bottom: 0.8em;}
 
-    h3 {font-size: 0.88em;}
+    h3 {font-size: 1.1em;}
 
-    h4 {font-size: 0.65em;}
+    h4 {font-size: 0.75em;}
 
-    p, section ul, section ol {font-size: 0.75em;}
+    p, section ul, section ol {font-size: 0.9em;}
 
     .grid {
         gap: 3em;
@@ -512,7 +535,7 @@ footer {
         width: 100%;
         height: 110px;}
     
-    article:first-of-type, article:nth-of-type(2) {margin-bottom: 1.5em;}
+    article:first-of-type, article:nth-of-type(2) {margin-bottom: 2em;}
 
     article h4 {margin-bottom: 0.5em;}
 
@@ -522,7 +545,7 @@ footer {
 
     .featured article:last-of-type img {object-position: 50% 80%;}
 
-    .cta {margin-top: 4.3em;}
+    .cta {margin-top: 5em;}
 
     .matcha101-columns {
         grid-template-columns: 1fr;
@@ -541,15 +564,18 @@ footer {
         margin-bottom: 30px;
         line-height: 2.1;}
 
-    .table {margin-top: -10px;}
+    .table {
+        margin-top: -10px;
+        text-align: left;}
 
     table {display: none;}
 
     .mobile-table-alt {
         display: block;
-        font-size: 0.75em;
+        font-size: 0.9em;
         line-height: 2.1;
-        padding-left: 30px;}
+        padding-left: 30px;
+        text-align: left;}
 
     blockquote {
         font-size: 1em;
@@ -562,7 +588,8 @@ footer {
         flex-direction: column;}
 
     .recipes-columns section:nth-child(1) {
-        order: 1;}
+        order: 1;
+        margin-bottom: 20px;}
 
     .recipes-columns section:nth-child(2) {
         order: 3;
@@ -602,6 +629,8 @@ footer {
         margin-top: 10px;
         font-size: 0.8em;}
 
+    .contact-form input {height: 40px;}
+    
     .contact-form input,
     .contact-form textarea {
         width: 100%;
@@ -613,6 +642,6 @@ footer {
         padding: 8px 14px;}
 
     footer {
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 1em;}
 }
