@@ -13,7 +13,8 @@ body {
     font-family: 'Crimson Text', serif;
     line-height: 1.5;
     background: #F5F2E7;
-    color: #333;}
+    color: #333;
+    background: linear-gradient(to bottom, #F5F2E7 0%, #EDEAD9 100%);} /* Added a very subtle gradient background to add texture but still keep the clean look */
 
 h1, h2, h3, figcaption {
   font-family: 'Unica One', sans-serif;
